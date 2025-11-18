@@ -1,0 +1,66 @@
+/* Estilos generales (pueden variar según tu diseño) */
+
+
+/* --- SECCIÓN PRINCIPAL --- */
+.titol {
+    /* Estilo del título */
+    font-family: 'Workbench', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+/* --- CONTENEDOR DE LAS TARJETAS (¡Aquí está la magia!) --- */
+.cardsgires {
+    width: 70vw;
+    height: 40vw;
+    display: flex; 
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: space-between; /* Distribuye el espacio entre ellas */
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+   
+}
+
+/* --- ESTILO DE CADA TARJETA --- */
+.card {
+    /* 2. Define el tamaño base (un tercio del contenedor) */
+    flex-basis: 33.33%; 
+    display: flex;
+    flex-direction: column; /* Coloca imagen encima del texto */
+    
+    /* Estilos visuales de la tarjeta */
+    border: 2px solid #555; /* Borde sutil, como en la imagen */
+    padding: 15px; 
+    box-sizing: border-box; /* Asegura que padding y border no aumenten el tamaño total */
+    background-color: #1a1a1a; /* Fondo de tarjeta un poco más claro que el body */
+}
+
+.card img {
+    /* 3. Estilo de la imagen */
+    width: 99%; 
+    height: 400px;
+    object-fit: cover;
+
+}
+
+
+.card div {
+    padding-top: 20px;
+}
+
+.card h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'Rubik Burned', sans-serif;
+}
+
+.card h5 {
+
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #ccc;
+    font-weight: normal;
+    font-family: gugi;
+}
