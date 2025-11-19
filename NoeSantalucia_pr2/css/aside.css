@@ -1,0 +1,14 @@
+.giresiaside {
+    display: flex; /* Habilita Flexbox */
+    gap: 20px; /* Espacio entre los elementos (los bloques de la izquierda y el aside) */
+    max-width: 1200px; /* O el ancho que necesites para tu contenido */
+    margin: 0 auto; /* Para centrar el contenedor si es necesario */
+}
+
+.videosimerch {
+    /* Esto le da al aside un ancho fijo o un ancho máximo para que se mantenga a la derecha. */
+    width: 300px; /* Ejemplo de ancho, ajústalo según el tamaño de tu video */
+    flex-shrink: 0; /* Asegura que no se haga más pequeño */
+    padding: 10px; /* Espaciado interno */
+    /* Otros estilos de presentación (borde, fondo, etc.) */
+}

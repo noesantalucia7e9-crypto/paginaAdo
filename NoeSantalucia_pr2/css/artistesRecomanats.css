@@ -1,0 +1,179 @@
+
+:root {
+    --color-fons-principal: #0a0a1a;       
+    --color-text-clar: #e0e0ff;           
+    --color-accent-cyan: #00a2ff;         
+    --color-accent-magenta: #3427e0;      
+    --color-reixa: #1a1a3a;              
+    --color-fons-targeta: #1a1a3a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gugi', sans-serif;
+    background-color: var(--color-fons-principal);
+    color: var(--color-text-clar);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+header {
+    background-color: #0d0d29;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--color-accent-cyan);
+    box-shadow: 0 0 15px var(--color-accent-cyan);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: var(--color-accent-magenta);
+    text-shadow: 0 0 8px var(--color-accent-magenta);
+    font-family: 'Rubik Burned';
+}
+
+
+.lista-artista { 
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.tarjeta-artista {
+    background-color: var(--color-fons-targeta);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--color-reixa);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-artista:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 255, 255, 0.3); 
+}
+
+.tarjeta-artista h2 {
+    color: var(--color-accent-cyan);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--color-accent-magenta);
+    padding-bottom: 8px;
+}
+
+.contenido-tarjeta { 
+    flex-grow: 1;
+}
+
+.contenido-tarjeta p {
+    margin-bottom: 15px;
+    color: var(--color-text-clar);
+}
+
+.pista-destacada {
+    font-style: italic;
+    color: #999;
+    margin-top: 10px;
+}
+
+
+
+
+.boton-escuchar {
+    display: inline-block;
+    background-color: var(--color-accent-magenta);
+    color: var(--color-fons-principal);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: auto;
+    transition: background-color 0.3s ease, transform 0.1s;
+}
+
+.boton-escuchar:hover {
+    background-color: var(--color-accent-cyan);
+    color: var(--color-fons-principal);
+    transform: scale(1.02);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid var(--color-reixa);
+    background-color: #0d0d29;
+}
+
+.xarxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+
+.xarxes p {
+    width: 100%; 
+    color: #666;
+    margin-top: 10px;
+}
+
+.xarxes a {
+    display: block;
+    line-height: 0; 
+}
+
+.imgfooter {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .lista-artista {
+        gap: 20px;
+    }
+    body {
+        padding: 10px;
+    }
+}
+
+.xarxes{
+    display: flex;
+    width: 90vw;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+
+}
+.imgfooter{
+    width: auto;
+    height: 50px;
+    
+}

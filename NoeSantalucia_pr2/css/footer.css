@@ -1,0 +1,15 @@
+.xarxes{
+    display: flex;
+    width: 99vw;
+    background-color: #070707;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+
+}
+.imgfooter{
+    height: 50px;
+    
+}
