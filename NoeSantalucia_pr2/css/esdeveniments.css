@@ -1,0 +1,142 @@
+:root {
+    --color-fons: #0a0a1a;        
+    --color-text-clar: #e0e0ff;   
+    --color-accent-cyan: #00ffff; 
+    --color-accent-magenta: #2f00ff; 
+    --color-reixa: #1a1a3a;      
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gugi'; 
+    background-color: var(--color-fons);
+    color: var(--color-text-clar);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+main {
+    
+    background-image: 
+        linear-gradient(to right, var(--color-reixa) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--color-reixa) 1px, transparent 1px);
+    background-size: 30px 30px;
+    padding: 20px;
+}
+
+
+
+.esdeveniments-llista {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 25px;
+}
+
+
+.esdeveniment-targeta {
+    background-color: #1a1a3a; 
+    border: 1px solid var(--color-reixa);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.esdeveniment-targeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0, 255, 255, 0.4); 
+}
+
+.titol-esdeveniment {
+    font-size: 1.6em;
+    color: var(--color-accent-cyan);
+    border-bottom: 2px dashed var(--color-reixa);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-style: 'Workbench', sans-serif;
+}
+
+.data {
+    color: var(--color-accent-magenta);
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.detalls p {
+    margin-bottom: 15px;
+}
+
+.categoria {
+    display: inline-block;
+    background-color: var(--color-accent-magenta);
+    color: var(--color-fons);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.enllac-mes {
+    display: block;
+    text-align: right;
+    color: var(--color-accent-cyan);
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 15px;
+    transition: color 0.3s;
+}
+
+.enllac-mes:hover {
+    color: var(--color-accent-magenta);
+    text-shadow: 0 0 5px var(--color-accent-cyan);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid var(--color-reixa);
+    color: #666;
+    font-size: 0.8em;
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    main {
+        padding: 10px;
+    }
+}
+
+.xarxes{
+    display: flex;
+    width: 90vw;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+
+}
+.imgfooter{
+    height: 50px;
+    
+}
+.xarxes{
+    display: flex;
+    justify-content: center;
+}
